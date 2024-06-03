@@ -38,10 +38,6 @@
   object-fit: contain;
 }
 
-:where(.vds-poster[data-hidden]) {
-  display: none;
-}
-
 :where(.vds-poster[data-visible]) {
   opacity: 1;
 }

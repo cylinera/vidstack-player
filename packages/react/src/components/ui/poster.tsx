@@ -83,7 +83,7 @@ const PosterImg = React.forwardRef<HTMLImageElement, PosterImgProps>(
         alt={$alt || undefined}
         crossOrigin={$crossOrigin || undefined}
         ref={composeRefs(img.set as React.Ref<HTMLImageElement>, forwardRef)}
-        style={{ display: $loading || $hidden ? 'none' : undefined }}
+        style={{ visibility: $loading || $hidden ? 'hidden' : undefined }}
       >
         {children}
       </Primitive.img>
